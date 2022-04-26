@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+/* @import url('https://db.onlinewebfonts.com/c/16efa2896f117dae2debeb23ab4715dd?family=DidoteTextW01-Italic'); */
+@font-face {
+    font-family: 'Didot';
+    src: url('../fonts/font-family/Didot\ Italic.ttf');
+}
+
+/* Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+.font-1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-2 {
+    font-family: 'Didot' !important;
+}
+
+.headers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    position: fixed;
+}
+
+.first-header {
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-col {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.first-header .search-bar {
+    display: flex;
+    flex-basis: 28%;
+}
+
+.search-bar .search-bar-icon {
+    color: rgb(209, 153, 153);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.search-bar .search-box {
+    padding-left: 10px;
+}
+
+.search-box input {
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    width: 200px;
+    background-color: #000;
+    font-size: 14px;   
+}
+
+.search-box input::placeholder {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+.first-header .promo-code {
+    text-align: center;
+    flex-basis: 28%;
+}
+
+.first-header .social-media {
+    text-align: right;
+    flex-basis: 28%;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.first-header .social-media li {
+    padding-left: 10px;
+}
+
+.first-header .social-media:last-child {
+    margin-right: 3px;
+}
+
+.second-header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(99, 65, 65);
+    color: #fff;
+    
+}
+
+.second-header .shop-name {
+    flex-basis: 12%;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+.second-header .shop-name a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.second-header .nav {
+    flex-basis: 60%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+.social-media li,
+.nav-list li {
+    list-style-type: none;
+    float: left;
+}
+
+.second-header .user-action {
+    flex-basis: 12%;
+    display: flex;
+    justify-content: right;
+}
+
+.user-action .user-log-in {
+    display: flex;
+    padding: 6px 7px;
+}
+
+.user-log-in span {
+    margin-right: 7px;
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.user-action .user-cart {
+    margin-left: 7px;
+}
+
+.cover-img {
+    background: url('../img/cover/cover-img.webp') no-repeat center; 
+    height: 800px;
+    background-size: cover;
+}
+
+.cover-img .cover-content {
+    position: absolute;
+    top: 270px;
+    left: 230px;
+    width: 320px;
+    color: #fff;
+}
+
+.cover-content .content-type {
+    font-size: 16px;
+}
+
+.cover-content .content-title {
+    font-size: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cover-content .description {
+    font-size: 20px;
+}
+
+
+
